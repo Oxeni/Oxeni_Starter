@@ -1,14 +1,9 @@
 import React from "react";
 
-import ContactProposal from './components/index_components/contact-proposal';
-import Landing from './components/index_components/landing';
-
-
 const index = () => {
   return (
     <>
-      <Landing/>
-      <ContactProposal/>
+        <h1>Starter Project Working</h1>
     </>
   );
 };
