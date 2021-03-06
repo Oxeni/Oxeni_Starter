@@ -10,7 +10,7 @@ ol[class] {
     padding: 0;
 }
 
-.main{
+.main {
     margin-top: 6rem;
 }
 
@@ -43,6 +43,18 @@ body {
     line-height: 1.5;
     box-sizing: border-box;
     font-family: 'georgian', 'Inter';
+
+    * {
+        ::-moz-selection {
+            background: rgb(22, 22, 22) !important;
+            color: white
+        }
+
+        ::selection {
+            background: rgb(22, 22, 22) !important;
+            color: white
+        }
+    }
 }
 
 ul[class],
@@ -72,7 +84,7 @@ select {
 }
 
 img:not([alt]) {
-  filter: blur(10px);
+    filter: blur(10px);
 }
 
 // @media (prefers-reduced-motion: reduce) {
@@ -81,6 +93,6 @@ img:not([alt]) {
 //         animation-iteration-count: 1 !important;
 //         transition-duration: 0.01ms !important;
 //         scroll-behavior: auto !important;
-        
+
 //     }
 // }
