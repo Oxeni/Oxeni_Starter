@@ -9,8 +9,8 @@ interface props {
     disabled?: boolean,
     ctaMode?: boolean,
     style?: CSSProperties
-    onClick?: MouseEventHandler<HTMLButtonElement>,
-    onHover?: MouseEventHandler<HTMLButtonElement>
+    onClick?: MouseEventHandler,
+    onHover?: MouseEventHandler
 }
 
 
@@ -24,7 +24,7 @@ const Button: FC<props> = ({
     ctaMode = false,
     children,
     style,
-    onClick,
+    // onClick,
     onHover }) => {
 
 
@@ -34,7 +34,7 @@ const Button: FC<props> = ({
             <button
                 className={`button ${className}`}
                 id={`${id}`}
-                onClick={(e) => !disabled && onClick(e)}
+                // onClick={(e) => !disabled && onClick(e)}
                 onMouseOver={onHover}
                 style={style}>
                 <div className={`button_container ${ctaMode && 'cta_mode'}`}>
